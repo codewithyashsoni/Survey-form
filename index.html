@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">University Survey Form</h1>
+        <p id="description">Please take a moment to complete this survey and help us improve the university experience</p>
+        <form id="survey-form">
+            <fieldset>
+
+                <label for="name" id="name-label">Name: <input type="text" required id ="name" name="name" placeholder="Enter your name"></label>
+                <label for="email" id="email-label">Email: <input id="email" required type="email" placeholder="Enter your email" name="email"></label>
+                <label for="number" id="number-label">Number: <input id="number" name="number" type="tel" min="1000000000" max="999999999999999" placeholder="Enter your number"></label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Whats is your role at the university?</legend>
+                <select id="dropdown" name="role-at-university">
+
+                    <option value="0">Select any one</option>
+                    <option value="1">Student</option>
+                    <option value="2">Faculty</option>
+                    <option value="3">Staff</option>
+
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>What is your current year of study?(only for students)</legend>
+                <label for="first-year"><input type="radio" value="first-year" id="first-year" name="year" > First Year</label>
+                <label for="second-year"><input type="radio" value="second-year" id="second-year" name="year"  > Second Year</label>
+                <label for="third-year"><input type="radio" value="third-year" id="third-year" name="year" > Third Year</label>
+                <label for="fourth-year"><input type="radio" id="fourth-year" value="fourth-year" name="year" > Fourth Year</label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>What extracurricular activities are you currently involved in?(only for students)</legend>
+                <label for="Sports-teams"><input type="checkbox" id="Sports-teams" value="Sports-teams" name="activities"> Sports teams</label>
+                <label for="Cultural-clubs"><input type="checkbox" id="Cultural-clubs" value="Cultural-clubs" name="activities"> Cultural clubs</label>
+                <label for="Debate-society"><input type="checkbox" id="Debate-society" value="Debate-society" name="activities"> Debate society</label>
+
+             </fieldset>
+
+            <fieldset>
+
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea type="textarea" placeholder="Enter your comments here...." id="comments" name="comment" rows="3" cols="45" name="comment"></textarea>
+                       
+            </fieldset>
+
+            <fieldset>
+
+                <input type="submit" value="Submit" id="submit">
+                
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>
